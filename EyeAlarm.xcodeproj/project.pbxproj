@@ -19,6 +19,7 @@
 		8886575027CE277400C4B135 /* AlertListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8886574F27CE277400C4B135 /* AlertListViewController.swift */; };
 		8886575327CE29FC00C4B135 /* AlertListCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8886575127CE29FC00C4B135 /* AlertListCell.swift */; };
 		8886575427CE29FC00C4B135 /* AlertListCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8886575227CE29FC00C4B135 /* AlertListCell.xib */; };
+		EA27065827CEE2EE00EA041D /* Alert.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA27065727CEE2EE00EA041D /* Alert.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -55,6 +56,7 @@
 		8886574F27CE277400C4B135 /* AlertListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertListViewController.swift; sourceTree = "<group>"; };
 		8886575127CE29FC00C4B135 /* AlertListCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertListCell.swift; sourceTree = "<group>"; };
 		8886575227CE29FC00C4B135 /* AlertListCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AlertListCell.xib; sourceTree = "<group>"; };
+		EA27065727CEE2EE00EA041D /* Alert.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Alert.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -108,6 +110,7 @@
 				8886571C27CE240C00C4B135 /* AppDelegate.swift */,
 				8886571E27CE240C00C4B135 /* SceneDelegate.swift */,
 				8886572227CE240C00C4B135 /* Main.storyboard */,
+				EA27065727CEE2EE00EA041D /* Alert.swift */,
 				8886574F27CE277400C4B135 /* AlertListViewController.swift */,
 				8886575127CE29FC00C4B135 /* AlertListCell.swift */,
 				8886575227CE29FC00C4B135 /* AlertListCell.xib */,
@@ -268,6 +271,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EA27065827CEE2EE00EA041D /* Alert.swift in Sources */,
 				8886572727CE240C00C4B135 /* EyeAlarm.xcdatamodeld in Sources */,
 				8886571D27CE240C00C4B135 /* AppDelegate.swift in Sources */,
 				8886571F27CE240C00C4B135 /* SceneDelegate.swift in Sources */,
