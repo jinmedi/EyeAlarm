@@ -9,7 +9,6 @@
 /* Begin PBXBuildFile section */
 		8886571D27CE240C00C4B135 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8886571C27CE240C00C4B135 /* AppDelegate.swift */; };
 		8886571F27CE240C00C4B135 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8886571E27CE240C00C4B135 /* SceneDelegate.swift */; };
-		8886572127CE240C00C4B135 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8886572027CE240C00C4B135 /* ViewController.swift */; };
 		8886572427CE240C00C4B135 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8886572227CE240C00C4B135 /* Main.storyboard */; };
 		8886572727CE240C00C4B135 /* EyeAlarm.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 8886572527CE240C00C4B135 /* EyeAlarm.xcdatamodeld */; };
 		8886572927CE241000C4B135 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8886572827CE241000C4B135 /* Assets.xcassets */; };
@@ -17,6 +16,9 @@
 		8886573727CE241000C4B135 /* EyeAlarmTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8886573627CE241000C4B135 /* EyeAlarmTests.swift */; };
 		8886574127CE241000C4B135 /* EyeAlarmUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8886574027CE241000C4B135 /* EyeAlarmUITests.swift */; };
 		8886574327CE241000C4B135 /* EyeAlarmUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8886574227CE241000C4B135 /* EyeAlarmUITestsLaunchTests.swift */; };
+		8886575027CE277400C4B135 /* AlertListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8886574F27CE277400C4B135 /* AlertListViewController.swift */; };
+		8886575327CE29FC00C4B135 /* AlertListCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8886575127CE29FC00C4B135 /* AlertListCell.swift */; };
+		8886575427CE29FC00C4B135 /* AlertListCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8886575227CE29FC00C4B135 /* AlertListCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,7 +42,6 @@
 		8886571927CE240C00C4B135 /* EyeAlarm.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EyeAlarm.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8886571C27CE240C00C4B135 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8886571E27CE240C00C4B135 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		8886572027CE240C00C4B135 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		8886572327CE240C00C4B135 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		8886572627CE240C00C4B135 /* EyeAlarm.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = EyeAlarm.xcdatamodel; sourceTree = "<group>"; };
 		8886572827CE241000C4B135 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -51,6 +52,9 @@
 		8886573C27CE241000C4B135 /* EyeAlarmUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = EyeAlarmUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		8886574027CE241000C4B135 /* EyeAlarmUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EyeAlarmUITests.swift; sourceTree = "<group>"; };
 		8886574227CE241000C4B135 /* EyeAlarmUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EyeAlarmUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		8886574F27CE277400C4B135 /* AlertListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertListViewController.swift; sourceTree = "<group>"; };
+		8886575127CE29FC00C4B135 /* AlertListCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertListCell.swift; sourceTree = "<group>"; };
+		8886575227CE29FC00C4B135 /* AlertListCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AlertListCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,8 +107,10 @@
 			children = (
 				8886571C27CE240C00C4B135 /* AppDelegate.swift */,
 				8886571E27CE240C00C4B135 /* SceneDelegate.swift */,
-				8886572027CE240C00C4B135 /* ViewController.swift */,
 				8886572227CE240C00C4B135 /* Main.storyboard */,
+				8886574F27CE277400C4B135 /* AlertListViewController.swift */,
+				8886575127CE29FC00C4B135 /* AlertListCell.swift */,
+				8886575227CE29FC00C4B135 /* AlertListCell.xib */,
 				8886572827CE241000C4B135 /* Assets.xcassets */,
 				8886572A27CE241000C4B135 /* LaunchScreen.storyboard */,
 				8886572D27CE241000C4B135 /* Info.plist */,
@@ -236,6 +242,7 @@
 			files = (
 				8886572C27CE241000C4B135 /* LaunchScreen.storyboard in Resources */,
 				8886572927CE241000C4B135 /* Assets.xcassets in Resources */,
+				8886575427CE29FC00C4B135 /* AlertListCell.xib in Resources */,
 				8886572427CE240C00C4B135 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -261,10 +268,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8886572127CE240C00C4B135 /* ViewController.swift in Sources */,
 				8886572727CE240C00C4B135 /* EyeAlarm.xcdatamodeld in Sources */,
 				8886571D27CE240C00C4B135 /* AppDelegate.swift in Sources */,
 				8886571F27CE240C00C4B135 /* SceneDelegate.swift in Sources */,
+				8886575027CE277400C4B135 /* AlertListViewController.swift in Sources */,
+				8886575327CE29FC00C4B135 /* AlertListCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
