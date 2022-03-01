@@ -1,0 +1,626 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		8886571D27CE240C00C4B135 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8886571C27CE240C00C4B135 /* AppDelegate.swift */; };
+		8886571F27CE240C00C4B135 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8886571E27CE240C00C4B135 /* SceneDelegate.swift */; };
+		8886572127CE240C00C4B135 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8886572027CE240C00C4B135 /* ViewController.swift */; };
+		8886572427CE240C00C4B135 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8886572227CE240C00C4B135 /* Main.storyboard */; };
+		8886572727CE240C00C4B135 /* EyeAlarm.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 8886572527CE240C00C4B135 /* EyeAlarm.xcdatamodeld */; };
+		8886572927CE241000C4B135 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8886572827CE241000C4B135 /* Assets.xcassets */; };
+		8886572C27CE241000C4B135 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8886572A27CE241000C4B135 /* LaunchScreen.storyboard */; };
+		8886573727CE241000C4B135 /* EyeAlarmTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8886573627CE241000C4B135 /* EyeAlarmTests.swift */; };
+		8886574127CE241000C4B135 /* EyeAlarmUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8886574027CE241000C4B135 /* EyeAlarmUITests.swift */; };
+		8886574327CE241000C4B135 /* EyeAlarmUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8886574227CE241000C4B135 /* EyeAlarmUITestsLaunchTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		8886573327CE241000C4B135 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8886571127CE240C00C4B135 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 8886571827CE240C00C4B135;
+			remoteInfo = EyeAlarm;
+		};
+		8886573D27CE241000C4B135 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8886571127CE240C00C4B135 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 8886571827CE240C00C4B135;
+			remoteInfo = EyeAlarm;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		8886571927CE240C00C4B135 /* EyeAlarm.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EyeAlarm.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		8886571C27CE240C00C4B135 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		8886571E27CE240C00C4B135 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		8886572027CE240C00C4B135 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		8886572327CE240C00C4B135 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		8886572627CE240C00C4B135 /* EyeAlarm.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = EyeAlarm.xcdatamodel; sourceTree = "<group>"; };
+		8886572827CE241000C4B135 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		8886572B27CE241000C4B135 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		8886572D27CE241000C4B135 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8886573227CE241000C4B135 /* EyeAlarmTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = EyeAlarmTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		8886573627CE241000C4B135 /* EyeAlarmTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EyeAlarmTests.swift; sourceTree = "<group>"; };
+		8886573C27CE241000C4B135 /* EyeAlarmUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = EyeAlarmUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		8886574027CE241000C4B135 /* EyeAlarmUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EyeAlarmUITests.swift; sourceTree = "<group>"; };
+		8886574227CE241000C4B135 /* EyeAlarmUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EyeAlarmUITestsLaunchTests.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		8886571627CE240C00C4B135 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8886572F27CE241000C4B135 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8886573927CE241000C4B135 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		8886571027CE240C00C4B135 = {
+			isa = PBXGroup;
+			children = (
+				8886571B27CE240C00C4B135 /* EyeAlarm */,
+				8886573527CE241000C4B135 /* EyeAlarmTests */,
+				8886573F27CE241000C4B135 /* EyeAlarmUITests */,
+				8886571A27CE240C00C4B135 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		8886571A27CE240C00C4B135 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				8886571927CE240C00C4B135 /* EyeAlarm.app */,
+				8886573227CE241000C4B135 /* EyeAlarmTests.xctest */,
+				8886573C27CE241000C4B135 /* EyeAlarmUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		8886571B27CE240C00C4B135 /* EyeAlarm */ = {
+			isa = PBXGroup;
+			children = (
+				8886571C27CE240C00C4B135 /* AppDelegate.swift */,
+				8886571E27CE240C00C4B135 /* SceneDelegate.swift */,
+				8886572027CE240C00C4B135 /* ViewController.swift */,
+				8886572227CE240C00C4B135 /* Main.storyboard */,
+				8886572827CE241000C4B135 /* Assets.xcassets */,
+				8886572A27CE241000C4B135 /* LaunchScreen.storyboard */,
+				8886572D27CE241000C4B135 /* Info.plist */,
+				8886572527CE240C00C4B135 /* EyeAlarm.xcdatamodeld */,
+			);
+			path = EyeAlarm;
+			sourceTree = "<group>";
+		};
+		8886573527CE241000C4B135 /* EyeAlarmTests */ = {
+			isa = PBXGroup;
+			children = (
+				8886573627CE241000C4B135 /* EyeAlarmTests.swift */,
+			);
+			path = EyeAlarmTests;
+			sourceTree = "<group>";
+		};
+		8886573F27CE241000C4B135 /* EyeAlarmUITests */ = {
+			isa = PBXGroup;
+			children = (
+				8886574027CE241000C4B135 /* EyeAlarmUITests.swift */,
+				8886574227CE241000C4B135 /* EyeAlarmUITestsLaunchTests.swift */,
+			);
+			path = EyeAlarmUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		8886571827CE240C00C4B135 /* EyeAlarm */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8886574627CE241000C4B135 /* Build configuration list for PBXNativeTarget "EyeAlarm" */;
+			buildPhases = (
+				8886571527CE240C00C4B135 /* Sources */,
+				8886571627CE240C00C4B135 /* Frameworks */,
+				8886571727CE240C00C4B135 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = EyeAlarm;
+			productName = EyeAlarm;
+			productReference = 8886571927CE240C00C4B135 /* EyeAlarm.app */;
+			productType = "com.apple.product-type.application";
+		};
+		8886573127CE241000C4B135 /* EyeAlarmTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8886574927CE241000C4B135 /* Build configuration list for PBXNativeTarget "EyeAlarmTests" */;
+			buildPhases = (
+				8886572E27CE241000C4B135 /* Sources */,
+				8886572F27CE241000C4B135 /* Frameworks */,
+				8886573027CE241000C4B135 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				8886573427CE241000C4B135 /* PBXTargetDependency */,
+			);
+			name = EyeAlarmTests;
+			productName = EyeAlarmTests;
+			productReference = 8886573227CE241000C4B135 /* EyeAlarmTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		8886573B27CE241000C4B135 /* EyeAlarmUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8886574C27CE241000C4B135 /* Build configuration list for PBXNativeTarget "EyeAlarmUITests" */;
+			buildPhases = (
+				8886573827CE241000C4B135 /* Sources */,
+				8886573927CE241000C4B135 /* Frameworks */,
+				8886573A27CE241000C4B135 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				8886573E27CE241000C4B135 /* PBXTargetDependency */,
+			);
+			name = EyeAlarmUITests;
+			productName = EyeAlarmUITests;
+			productReference = 8886573C27CE241000C4B135 /* EyeAlarmUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		8886571127CE240C00C4B135 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1320;
+				LastUpgradeCheck = 1320;
+				TargetAttributes = {
+					8886571827CE240C00C4B135 = {
+						CreatedOnToolsVersion = 13.2.1;
+					};
+					8886573127CE241000C4B135 = {
+						CreatedOnToolsVersion = 13.2.1;
+						TestTargetID = 8886571827CE240C00C4B135;
+					};
+					8886573B27CE241000C4B135 = {
+						CreatedOnToolsVersion = 13.2.1;
+						TestTargetID = 8886571827CE240C00C4B135;
+					};
+				};
+			};
+			buildConfigurationList = 8886571427CE240C00C4B135 /* Build configuration list for PBXProject "EyeAlarm" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 8886571027CE240C00C4B135;
+			productRefGroup = 8886571A27CE240C00C4B135 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				8886571827CE240C00C4B135 /* EyeAlarm */,
+				8886573127CE241000C4B135 /* EyeAlarmTests */,
+				8886573B27CE241000C4B135 /* EyeAlarmUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		8886571727CE240C00C4B135 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8886572C27CE241000C4B135 /* LaunchScreen.storyboard in Resources */,
+				8886572927CE241000C4B135 /* Assets.xcassets in Resources */,
+				8886572427CE240C00C4B135 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8886573027CE241000C4B135 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8886573A27CE241000C4B135 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		8886571527CE240C00C4B135 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8886572127CE240C00C4B135 /* ViewController.swift in Sources */,
+				8886572727CE240C00C4B135 /* EyeAlarm.xcdatamodeld in Sources */,
+				8886571D27CE240C00C4B135 /* AppDelegate.swift in Sources */,
+				8886571F27CE240C00C4B135 /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8886572E27CE241000C4B135 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8886573727CE241000C4B135 /* EyeAlarmTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8886573827CE241000C4B135 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8886574327CE241000C4B135 /* EyeAlarmUITestsLaunchTests.swift in Sources */,
+				8886574127CE241000C4B135 /* EyeAlarmUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		8886573427CE241000C4B135 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 8886571827CE240C00C4B135 /* EyeAlarm */;
+			targetProxy = 8886573327CE241000C4B135 /* PBXContainerItemProxy */;
+		};
+		8886573E27CE241000C4B135 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 8886571827CE240C00C4B135 /* EyeAlarm */;
+			targetProxy = 8886573D27CE241000C4B135 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		8886572227CE240C00C4B135 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				8886572327CE240C00C4B135 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		8886572A27CE241000C4B135 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				8886572B27CE241000C4B135 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		8886574427CE241000C4B135 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		8886574527CE241000C4B135 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		8886574727CE241000C4B135 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = V5GGGSEQZM;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = EyeAlarm/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = Soomin.EyeAlarm;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		8886574827CE241000C4B135 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = V5GGGSEQZM;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = EyeAlarm/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = Soomin.EyeAlarm;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		8886574A27CE241000C4B135 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = V5GGGSEQZM;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = Soomin.EyeAlarmTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/EyeAlarm.app/EyeAlarm";
+			};
+			name = Debug;
+		};
+		8886574B27CE241000C4B135 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = V5GGGSEQZM;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = Soomin.EyeAlarmTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/EyeAlarm.app/EyeAlarm";
+			};
+			name = Release;
+		};
+		8886574D27CE241000C4B135 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = V5GGGSEQZM;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = Soomin.EyeAlarmUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = EyeAlarm;
+			};
+			name = Debug;
+		};
+		8886574E27CE241000C4B135 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = V5GGGSEQZM;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = Soomin.EyeAlarmUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = EyeAlarm;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		8886571427CE240C00C4B135 /* Build configuration list for PBXProject "EyeAlarm" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8886574427CE241000C4B135 /* Debug */,
+				8886574527CE241000C4B135 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8886574627CE241000C4B135 /* Build configuration list for PBXNativeTarget "EyeAlarm" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8886574727CE241000C4B135 /* Debug */,
+				8886574827CE241000C4B135 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8886574927CE241000C4B135 /* Build configuration list for PBXNativeTarget "EyeAlarmTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8886574A27CE241000C4B135 /* Debug */,
+				8886574B27CE241000C4B135 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8886574C27CE241000C4B135 /* Build configuration list for PBXNativeTarget "EyeAlarmUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8886574D27CE241000C4B135 /* Debug */,
+				8886574E27CE241000C4B135 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		8886572527CE240C00C4B135 /* EyeAlarm.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				8886572627CE240C00C4B135 /* EyeAlarm.xcdatamodel */,
+			);
+			currentVersion = 8886572627CE240C00C4B135 /* EyeAlarm.xcdatamodel */;
+			path = EyeAlarm.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 8886571127CE240C00C4B135 /* Project object */;
+}
