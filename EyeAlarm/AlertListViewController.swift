@@ -34,7 +34,32 @@ extension AlertListViewController {
     }
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         guard let cell = tableView.dequeueReusableCell(withIdentifier: "AlertListCell", for: indexPath) as? AlertListCell else {
+            return UITableViewCell()
+        }
+        cell.alertSwitch.isOn = alertlist[indexPath.row].isOn
+        cell.timeLabel.text = alertlist[indexPath.row].time
+        cell.meridiemLable.text = alertlist[indexPath.row].meridiem
+        
+        return cell
+    }
+    
+    override func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+            return 80
+        
+    }
+    
+    override func tableView(_ tableView: UITableView, canEditRowAt indexPath: IndexPath) -> Bool {
+            return true
+    }
+    
+    override func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCell.EditingStyle, forRowAt indexPath: IndexPath) {
+        switch editingStyle{
+        case .delete:
+            //노티피케이션 삭제 구현
             return
+        default:
+            break
         }
     }
+    
 }

@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7E2889A827D07F5B00A63124 /* AddAlertViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E2889A727D07F5B00A63124 /* AddAlertViewController.swift */; };
 		8886571D27CE240C00C4B135 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8886571C27CE240C00C4B135 /* AppDelegate.swift */; };
 		8886571F27CE240C00C4B135 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8886571E27CE240C00C4B135 /* SceneDelegate.swift */; };
 		8886572427CE240C00C4B135 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8886572227CE240C00C4B135 /* Main.storyboard */; };
@@ -40,6 +41,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		7E2889A727D07F5B00A63124 /* AddAlertViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddAlertViewController.swift; sourceTree = "<group>"; };
 		8886571927CE240C00C4B135 /* EyeAlarm.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EyeAlarm.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8886571C27CE240C00C4B135 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8886571E27CE240C00C4B135 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -112,6 +114,7 @@
 				8886572227CE240C00C4B135 /* Main.storyboard */,
 				EA27065727CEE2EE00EA041D /* Alert.swift */,
 				8886574F27CE277400C4B135 /* AlertListViewController.swift */,
+				7E2889A727D07F5B00A63124 /* AddAlertViewController.swift */,
 				8886575127CE29FC00C4B135 /* AlertListCell.swift */,
 				8886575227CE29FC00C4B135 /* AlertListCell.xib */,
 				8886572827CE241000C4B135 /* Assets.xcassets */,
@@ -273,6 +276,7 @@
 			files = (
 				EA27065827CEE2EE00EA041D /* Alert.swift in Sources */,
 				8886572727CE240C00C4B135 /* EyeAlarm.xcdatamodeld in Sources */,
+				7E2889A827D07F5B00A63124 /* AddAlertViewController.swift in Sources */,
 				8886571D27CE240C00C4B135 /* AppDelegate.swift in Sources */,
 				8886571F27CE240C00C4B135 /* SceneDelegate.swift in Sources */,
 				8886575027CE277400C4B135 /* AlertListViewController.swift in Sources */,

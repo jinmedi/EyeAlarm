@@ -3,6 +3,7 @@
     <device id="retina5_9" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -57,6 +58,33 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="BVz-vH-iKD" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-462" y="-1"/>
+        </scene>
+        <!--Add Alert View Controller-->
+        <scene sceneID="LQK-lk-6JL">
+            <objects>
+                <viewController id="aFZ-Hf-yyT" customClass="AddAlertViewController" customModule="EyeAlarm" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Caw-Ab-PZS">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <navigationBar contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="52V-SI-iQD">
+                                <rect key="frame" x="0.0" y="59" width="375" height="44"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                                <items>
+                                    <navigationItem title="알람추가" id="UN6-On-UJz">
+                                        <barButtonItem key="leftBarButtonItem" title="취소" id="B3f-8r-hdQ"/>
+                                        <barButtonItem key="rightBarButtonItem" title="Item" id="SYb-KW-a7g"/>
+                                    </navigationItem>
+                                </items>
+                            </navigationBar>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="qGD-Qw-rtj"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="167-dj-bNX" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1127" y="-1"/>
         </scene>
     </scenes>
     <resources>
