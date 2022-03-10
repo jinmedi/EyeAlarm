@@ -6,10 +6,13 @@
 //
 
 import UIKit
+import UserNotifications
 
 class AlertListViewController: UITableViewController{
     
-    var alertlist : [Alert] = []
+    var alerts : [Alert] = []
+    let userNotificationCenter = UNUserNotificationCenter.current()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -17,12 +20,27 @@ class AlertListViewController: UITableViewController{
         tableView.register(nibName, forCellReuseIdentifier: "AlertListCell")
     }
     @IBAction func addAlertButtonAction(_ sender: UIBarButtonItem) {
+        guard let addAlertVC = storyboard?.instantiateViewController(withIdentifier: "AddAlertViewController") as? AddAlertViewController else { return }
+        
+        addAlertVC.pickedDate = {[weak self] date in
+            guard let self = self else { return}
+            let newAlert = Alert(date: date, isOn: true)
+
+        }
+        self.present(addAlertVC, animated: true, completion: nil)
+        
+
+    }
+    func alertlist() -> [Alert] {
+        guard let data = UserDefaults.standard.value(forKey: "alerts") as? Data,
+              let alerts = try? PropertyListDecoder().decode([Alert].self, from: data) else { return []}
+        return alerts
     }
 }
 
 extension AlertListViewController {
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return alertlist.count
+        return alerts.count
     }
     override func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
         switch section {
@@ -36,9 +54,9 @@ extension AlertListViewController {
         guard let cell = tableView.dequeueReusableCell(withIdentifier: "AlertListCell", for: indexPath) as? AlertListCell else {
             return UITableViewCell()
         }
-        cell.alertSwitch.isOn = alertlist[indexPath.row].isOn
-        cell.timeLabel.text = alertlist[indexPath.row].time
-        cell.meridiemLable.text = alertlist[indexPath.row].meridiem
+        cell.alertSwitch.isOn = alerts[indexPath.row].isOn
+        cell.timeLabel.text = alerts[indexPath.row].time
+        cell.meridiemLable.text = alerts[indexPath.row].meridiem
         
         return cell
     }
