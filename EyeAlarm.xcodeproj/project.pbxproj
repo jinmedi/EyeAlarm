@@ -20,6 +20,7 @@
 		8886575027CE277400C4B135 /* AlertListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8886574F27CE277400C4B135 /* AlertListViewController.swift */; };
 		8886575327CE29FC00C4B135 /* AlertListCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8886575127CE29FC00C4B135 /* AlertListCell.swift */; };
 		8886575427CE29FC00C4B135 /* AlertListCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8886575227CE29FC00C4B135 /* AlertListCell.xib */; };
+		888F4BEE27DD871200816F1E /* UNNotificationCenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 888F4BED27DD871200816F1E /* UNNotificationCenter.swift */; };
 		EA27065827CEE2EE00EA041D /* Alert.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA27065727CEE2EE00EA041D /* Alert.swift */; };
 /* End PBXBuildFile section */
 
@@ -58,6 +59,8 @@
 		8886574F27CE277400C4B135 /* AlertListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertListViewController.swift; sourceTree = "<group>"; };
 		8886575127CE29FC00C4B135 /* AlertListCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertListCell.swift; sourceTree = "<group>"; };
 		8886575227CE29FC00C4B135 /* AlertListCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AlertListCell.xib; sourceTree = "<group>"; };
+		888F4BED27DD871200816F1E /* UNNotificationCenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UNNotificationCenter.swift; sourceTree = "<group>"; };
+		888F4BEF27DD909A00816F1E /* EyeAlarm.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = EyeAlarm.entitlements; sourceTree = "<group>"; };
 		EA27065727CEE2EE00EA041D /* Alert.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Alert.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -109,12 +112,14 @@
 		8886571B27CE240C00C4B135 /* EyeAlarm */ = {
 			isa = PBXGroup;
 			children = (
+				888F4BEF27DD909A00816F1E /* EyeAlarm.entitlements */,
 				8886571C27CE240C00C4B135 /* AppDelegate.swift */,
 				8886571E27CE240C00C4B135 /* SceneDelegate.swift */,
 				8886572227CE240C00C4B135 /* Main.storyboard */,
 				EA27065727CEE2EE00EA041D /* Alert.swift */,
 				8886574F27CE277400C4B135 /* AlertListViewController.swift */,
 				7E2889A727D07F5B00A63124 /* AddAlertViewController.swift */,
+				888F4BED27DD871200816F1E /* UNNotificationCenter.swift */,
 				8886575127CE29FC00C4B135 /* AlertListCell.swift */,
 				8886575227CE29FC00C4B135 /* AlertListCell.xib */,
 				8886572827CE241000C4B135 /* Assets.xcassets */,
@@ -276,6 +281,7 @@
 			files = (
 				EA27065827CEE2EE00EA041D /* Alert.swift in Sources */,
 				8886572727CE240C00C4B135 /* EyeAlarm.xcdatamodeld in Sources */,
+				888F4BEE27DD871200816F1E /* UNNotificationCenter.swift in Sources */,
 				7E2889A827D07F5B00A63124 /* AddAlertViewController.swift in Sources */,
 				8886571D27CE240C00C4B135 /* AppDelegate.swift in Sources */,
 				8886571F27CE240C00C4B135 /* SceneDelegate.swift in Sources */,
@@ -457,6 +463,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = EyeAlarm/EyeAlarm.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = V5GGGSEQZM;
@@ -485,6 +492,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = EyeAlarm/EyeAlarm.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = V5GGGSEQZM;

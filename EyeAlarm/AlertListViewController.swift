@@ -15,6 +15,14 @@ class AlertListViewController: UITableViewController{
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        let authrizationOptions = UNAuthorizationOptions(arrayLiteral: [.alert, .badge, .sound])
+        
+        userNotificationCenter.requestAuthorization(options: authrizationOptions)
+        { _, error in
+            if let error = error {
+                print("ERROR : notification authrization request \(error.localizedDescription)")
+            }
+        }
         
         let nibName = UINib(nibName: "AlertListCell", bundle: nil)
         tableView.register(nibName, forCellReuseIdentifier: "AlertListCell")
@@ -41,6 +49,7 @@ class AlertListViewController: UITableViewController{
             
             self.alerts = alertList
             UserDefaults.standard.set(try? PropertyListEncoder().encode(self.alerts), forKey: "alerts")
+            self.userNotificationCenter.addNotificatoinRequest(by: newAlert)
             
             self.tableView.reloadData()
         }
@@ -94,8 +103,9 @@ extension AlertListViewController {
         case .delete:
             self.alerts.remove(at: indexPath.row)
             UserDefaults.standard.set(try? PropertyListEncoder().encode(self.alerts),forKey: "alerts")
-            self.tableView.reloadData()
             //노티피케이션 삭제 구현
+            userNotificationCenter.removePendingNotificationRequests(withIdentifiers: [alerts[indexPath.row].id])
+            self.tableView.reloadData()
             return
         default:
             break
