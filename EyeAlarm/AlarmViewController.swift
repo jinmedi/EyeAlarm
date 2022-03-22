@@ -44,7 +44,10 @@ func playAlarm() {
     // after initialization play audio its just like click on play button
  //   audiovisualBackgroundPlaybackPolicy =
  //   audio.audiovisualBackgroundPlaybackPolicy = .continuesIfPossible
-    audio.audiovisualBackgroundPlaybackPolicy = .automatic
+//    audio.isExternalPlaybackActive = true
+    
+    audio.audiovisualBackgroundPlaybackPolicy = .continuesIfPossible
+//    audio.usesExternalPlaybackWhileExternalScreenIsActive = true
  //   audio.
     
     audio.play()

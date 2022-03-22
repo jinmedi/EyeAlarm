@@ -22,7 +22,8 @@ class AlertListViewController: UITableViewController{
     var alarmTime: String?
     var mTimer: Timer?
     
-    @IBOutlet weak var currentTimeLabel: UILabel!
+  //  @IBOutlet weak var currentTimeLabel: UILabel!
+//    @IBOutlet weak var currentTimeLabel: UILabel!
     
   //  @IBOutlet weak var StackView: UIStackView!
         
@@ -40,6 +41,7 @@ class AlertListViewController: UITableViewController{
         let nibName = UINib(nibName: "AlertListCell", bundle: nil)
         tableView.register(nibName, forCellReuseIdentifier: "AlertListCell")
         
+        Timer.scheduledTimer(timeInterval: interval, target: self, selector: timeSelector, userInfo: nil, repeats: true)
       //  let uiView = UIView.
         
         
@@ -85,14 +87,22 @@ class AlertListViewController: UITableViewController{
         let date = NSDate()
         let formatter = DateFormatter()
         formatter.dateFormat = "hh:mm"
-        currentTimeLabel.text = "현재시간:" + formatter.string(from: date as Date)
+      //  currentTimeLabel.text = "현재시간:" + formatter.string(from: date as Date)
         let currentTime = formatter.string(from: date as Date)
-        if( ){
-            alarmMonitor()
-        }else{
-            print("지금은 알람시간이 아님")
+//        print(alerts.self)
+//        print(alerts)
+        for i in 0...alerts.self.count-1  {
+//            print(alerts.self.count)
+            var indexNum : Int = 0
+             print(alerts[i].time)
+            if(alerts[i].time == currentTime){
+                print("지금이 바로 알람시간")
+                alarmMonitor()
+            }else{
+                indexNum += 1
+                print("지금은 알람시간이 아님")
+            }
         }
-        
     }
 }
 
