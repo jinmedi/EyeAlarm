@@ -7,12 +7,25 @@
 
 import UIKit
 import UserNotifications
+import AVFoundation
+
+//var audio : AVPlayer!
+
 
 class AlertListViewController: UITableViewController{
     
     var alerts : [Alert] = []
     let userNotificationCenter = UNUserNotificationCenter.current()
+    let timeSelector: Selector = #selector(AlertListViewController.updateTime)
+    let interval = 1.0
+    var count = 0
+    var alarmTime: String?
+    var mTimer: Timer?
     
+    @IBOutlet weak var currentTimeLabel: UILabel!
+    
+  //  @IBOutlet weak var StackView: UIStackView!
+        
     override func viewDidLoad() {
         super.viewDidLoad()
         let authrizationOptions = UNAuthorizationOptions(arrayLiteral: [.alert, .badge, .sound])
@@ -26,6 +39,11 @@ class AlertListViewController: UITableViewController{
         
         let nibName = UINib(nibName: "AlertListCell", bundle: nil)
         tableView.register(nibName, forCellReuseIdentifier: "AlertListCell")
+        
+      //  let uiView = UIView.
+        
+        
+        
 
     }
     
@@ -61,6 +79,20 @@ class AlertListViewController: UITableViewController{
         guard let data = UserDefaults.standard.value(forKey: "alerts") as? Data,
               let alerts = try? PropertyListDecoder().decode([Alert].self, from: data) else { return []}
         return alerts
+    }
+    
+    @objc func updateTime(){
+        let date = NSDate()
+        let formatter = DateFormatter()
+        formatter.dateFormat = "hh:mm"
+        currentTimeLabel.text = "현재시간:" + formatter.string(from: date as Date)
+        let currentTime = formatter.string(from: date as Date)
+        if( ){
+            alarmMonitor()
+        }else{
+            print("지금은 알람시간이 아님")
+        }
+        
     }
 }
 
@@ -111,5 +143,14 @@ extension AlertListViewController {
             break
         }
     }
+    func alarmMonitor (){
+        guard let addAlarmVC = storyboard?.instantiateViewController(withIdentifier: "AlarmViewController") as? AlarmViewController else { return }
+        //[alerts[IndexPath.row].time]
+      //  self.alerts
+        
+        self.present(addAlarmVC, animated: true, completion: nil)
+    }
+ 
     
 }
+

@@ -21,6 +21,8 @@
 		8886575327CE29FC00C4B135 /* AlertListCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8886575127CE29FC00C4B135 /* AlertListCell.swift */; };
 		8886575427CE29FC00C4B135 /* AlertListCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8886575227CE29FC00C4B135 /* AlertListCell.xib */; };
 		888F4BEE27DD871200816F1E /* UNNotificationCenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 888F4BED27DD871200816F1E /* UNNotificationCenter.swift */; };
+		88EF73D027DE11F00038373D /* AlarmViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88EF73CF27DE11F00038373D /* AlarmViewController.swift */; };
+		88EF73D227DE16670038373D /* alarmSample.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 88EF73D127DE16670038373D /* alarmSample.mp3 */; };
 		EA27065827CEE2EE00EA041D /* Alert.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA27065727CEE2EE00EA041D /* Alert.swift */; };
 /* End PBXBuildFile section */
 
@@ -61,6 +63,8 @@
 		8886575227CE29FC00C4B135 /* AlertListCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AlertListCell.xib; sourceTree = "<group>"; };
 		888F4BED27DD871200816F1E /* UNNotificationCenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UNNotificationCenter.swift; sourceTree = "<group>"; };
 		888F4BEF27DD909A00816F1E /* EyeAlarm.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = EyeAlarm.entitlements; sourceTree = "<group>"; };
+		88EF73CF27DE11F00038373D /* AlarmViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlarmViewController.swift; sourceTree = "<group>"; };
+		88EF73D127DE16670038373D /* alarmSample.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = alarmSample.mp3; sourceTree = "<group>"; };
 		EA27065727CEE2EE00EA041D /* Alert.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Alert.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -113,12 +117,14 @@
 			isa = PBXGroup;
 			children = (
 				888F4BEF27DD909A00816F1E /* EyeAlarm.entitlements */,
+				88EF73D127DE16670038373D /* alarmSample.mp3 */,
 				8886571C27CE240C00C4B135 /* AppDelegate.swift */,
 				8886571E27CE240C00C4B135 /* SceneDelegate.swift */,
 				8886572227CE240C00C4B135 /* Main.storyboard */,
 				EA27065727CEE2EE00EA041D /* Alert.swift */,
 				8886574F27CE277400C4B135 /* AlertListViewController.swift */,
 				7E2889A727D07F5B00A63124 /* AddAlertViewController.swift */,
+				88EF73CF27DE11F00038373D /* AlarmViewController.swift */,
 				888F4BED27DD871200816F1E /* UNNotificationCenter.swift */,
 				8886575127CE29FC00C4B135 /* AlertListCell.swift */,
 				8886575227CE29FC00C4B135 /* AlertListCell.xib */,
@@ -254,6 +260,7 @@
 				8886572C27CE241000C4B135 /* LaunchScreen.storyboard in Resources */,
 				8886572927CE241000C4B135 /* Assets.xcassets in Resources */,
 				8886575427CE29FC00C4B135 /* AlertListCell.xib in Resources */,
+				88EF73D227DE16670038373D /* alarmSample.mp3 in Resources */,
 				8886572427CE240C00C4B135 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -284,6 +291,7 @@
 				888F4BEE27DD871200816F1E /* UNNotificationCenter.swift in Sources */,
 				7E2889A827D07F5B00A63124 /* AddAlertViewController.swift in Sources */,
 				8886571D27CE240C00C4B135 /* AppDelegate.swift in Sources */,
+				88EF73D027DE11F00038373D /* AlarmViewController.swift in Sources */,
 				8886571F27CE240C00C4B135 /* SceneDelegate.swift in Sources */,
 				8886575027CE277400C4B135 /* AlertListViewController.swift in Sources */,
 				8886575327CE29FC00C4B135 /* AlertListCell.swift in Sources */,

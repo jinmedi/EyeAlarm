@@ -19,7 +19,6 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         // Override point for customization after application launch.
         
         UNUserNotificationCenter.current().delegate = self
-        print("authorization 시작")
 //        let authrizationOptions = UNAuthorizationOptions(arrayLiteral: [.alert, .badge, .sound])
 //        
 //        userNotificationCenter?.requestAuthorization(options: authrizationOptions)
@@ -28,7 +27,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 //                print("ERROR : notification authrization request \(error.localizedDescription)")
 //            }
 //        }
-        print("authorization 끝")
+
 //        print(userNotificationCenter!)
 
         return true
@@ -98,8 +97,21 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 extension AppDelegate : UNUserNotificationCenterDelegate {
     func userNotificationCenter(_ center: UNUserNotificationCenter, willPresent notification: UNNotification, withCompletionHandler completionHandler: @escaping (UNNotificationPresentationOptions) -> Void) {
         completionHandler([.banner, .list, .sound])
+        print("userNoti willPresent")
+        
+//        if let vc = UIStoryboard(name: "AlarmViewController", bundle: nil).instantiateViewController(withIdentifier: "AlarmViewController") as? AlarmViewController {
+//        if let window = self.window, let rootViewController = window.rootViewController {
+//            var currentController = rootViewController
+//            while let presentController = currentController.presentedViewController {
+//                currentController = presentController
+//            }
+//               currentController.present(vc, animated: true, completion: nil)
+//           }
+//        }
+        
     }
     func userNotificationCenter(_ center: UNUserNotificationCenter, didReceive response: UNNotificationResponse, withCompletionHandler completionHandler: @escaping () -> Void) {
         completionHandler()
+        print("userNoti didReceive")
     }
 }
